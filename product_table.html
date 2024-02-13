@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(img/coffee.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        td:last-child {
+            text-align: center;
+        }
+
+        .available {
+            color: green;
+        }
+
+        .out-of-stock {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Black Coffee</td>
+            <td>$2.99</td>
+            <td class="available">Available</td>
+        </tr>
+        <tr>
+            <td>Macchiato</td>
+            <td>$4.99</td>
+            <td class="out-of-stock">Out of Stock</td>
+        </tr>
+        <tr>
+            <td>Matcha</td>
+            <td>$4.99</td>
+            <td class="available">Available</td>
+        </tr>
+        <tr>
+            <td>French Press Coffee</td>
+            <td>$5.99</td>
+            <td class="available">Available</td>
+        </tr>
+        <tr>
+            <td>Cappuccino</td>
+            <td>$1.99</td>
+            <td class="out-of-stock">Out of Stock</td>
+        </tr>
+    </table>
+</body>
+</html>

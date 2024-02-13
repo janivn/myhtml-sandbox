@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(img/College_of_Science.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <table>
+            <tr>
+                <th>Event Name</th>
+                <th>Event Description</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>Pet Photography Contest</td>
+                <td>Show your FurrBaby pics! and get a chance to win!</td>
+                <td>2023-09-25</td>
+                <td>PSU-CS Building</td>
+            </tr>
+
+            <tr>
+                <td>Videography</td>
+                <td>Show your skills at filming!</td>
+                <td>2023-09-26</td>
+                <td>CS-Building</td>
+            </tr>
+            
+            <tr>
+                <td>Photography</td>
+                <td>Show your art by capturing unforgettable moments!</td>
+                <td>2023-09-27</td>
+                <td>PSU-IT Building & CS Building</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
